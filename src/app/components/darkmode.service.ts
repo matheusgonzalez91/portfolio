@@ -1,20 +1,19 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DarkmodeService {
-
   private darkMode = false;
 
-  isDarkMode(){
+  isDarkMode() {
     return this.darkMode;
   }
 
-  setDarkMode(isDarkMode: Boolean){
+  setDarkMode(isDarkMode: Boolean) {
     this.darkMode == isDarkMode;
 
-    if(isDarkMode) {
+    if (isDarkMode) {
       document.body.classList.add('dark-theme');
     } else {
       document.body.classList.remove('dark-theme');
