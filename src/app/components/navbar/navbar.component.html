@@ -7,4 +7,9 @@
     <li>Experiências</li>
     <li>Contato</li>
   </ul>
+
+  <button mat-icon-button (click)="toggleMode()">
+    <mat-icon>{{ isDarkMode ? 'wb_sunny' : 'nights_stay' }}</mat-icon>
+  </button>
+
 </nav>
