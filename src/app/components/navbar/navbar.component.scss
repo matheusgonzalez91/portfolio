@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(98, 0, 255);
+  color: white;
+  padding: 25px 0;
+}
+
+.logo{
+  font-size: 19px;
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+
+  li{
+    padding: 0 15px;
+  }
+}
+
