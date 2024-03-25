@@ -12,7 +12,7 @@
   </button>
 
   <button mat-icon-button class="mobile-menu-button" (click)="toggleMenu()">
-    <mat-icon>menu</mat-icon>
+    <mat-icon>{{ isMenuOpen ? "close" : "menu" }}</mat-icon>
   </button>
 
   <ul class="mobile-menu" [class.open]="isMenuOpen">
