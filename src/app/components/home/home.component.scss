@@ -1,0 +1,77 @@
+$main-color: #6200ff;
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main p {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: transparent;
+  border-color: $main-color;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  color: $main-color;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.main img {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  margin-top: 20px; /* Adicionando margem entre a imagem e o botão */
+}
+
+img {
+  width: 80%;
+}
+
+@media only screen and (max-width: 890px) {
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .main p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  button {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

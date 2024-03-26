@@ -1,0 +1,59 @@
+<div class="projetos">
+  <div class="label">
+    <h2>Projetos</h2>
+  </div>
+
+  <div class="counter" #counterElement>
+    <div *ngIf="startCounter" class="number">+ {{ count }}</div>
+  </div>
+
+  <div class="list-projects">
+    <ul class="list">
+      <li
+        (click)="filtrarProjetos('Java')"
+        [class.selected]="categoriaSelecionada === 'Java'"
+      >
+        Java
+      </li>
+      <li
+        (click)="filtrarProjetos('Python')"
+        [class.selected]="categoriaSelecionada === 'Python'"
+      >
+        Python
+      </li>
+      <li
+        (click)="filtrarProjetos('React')"
+        [class.selected]="categoriaSelecionada === 'React'"
+      >
+        React
+      </li>
+      <li
+        (click)="filtrarProjetos('Angular')"
+        [class.selected]="categoriaSelecionada === 'Angular'"
+      >
+        Angular
+      </li>
+      <li
+        (click)="filtrarProjetos('PHP')"
+        [class.selected]="categoriaSelecionada === 'PHP'"
+      >
+        PHP
+      </li>
+      <li
+        (click)="filtrarProjetos('Node')"
+        [class.selected]="categoriaSelecionada === 'Node'"
+      >
+        Node
+      </li>
+    </ul>
+  </div>
+  <div class="result-projects">
+    <ul class="result">
+      <li *ngFor="let projeto of projetosFiltrados">
+        <h2>{{ projeto.nome }}</h2>
+        <h3>{{ projeto.descricao }}</h3>
+        <a href={{projeto.linkProjeto}} target="_blank"><button>Acessar Projeto</button></a>
+      </li>
+    </ul>
+  </div>
+</div>

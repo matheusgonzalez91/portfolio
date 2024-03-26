@@ -1,15 +1,19 @@
 <nav>
-  <div class="logo">Matheus Gonzalez</div>
   <ul class="desktop-menu">
     <li>Home</li>
     <li>Sobre</li>
     <li>Projetos</li>
     <li>Experiências</li>
     <li>Contato</li>
+    <li><a href="https://www.linkedin.com/in/matheussouzagonzalez/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/matheusgonzalez91" target="_blank">GitHub</a></li>
   </ul>
-  <button mat-icon-button (click)="toggleMode()">
-    <mat-icon>{{ isDarkMode ? "wb_sunny" : "nights_stay" }}</mat-icon>
-  </button>
+
+  <div class="darkModeToggle">
+    <button mat-icon-button (click)="toggleMode()">
+      <mat-icon>{{ isDarkMode ? "wb_sunny" : "nights_stay" }}</mat-icon>
+    </button>
+  </div>
 
   <button mat-icon-button class="mobile-menu-button" (click)="toggleMenu()">
     <mat-icon>{{ isMenuOpen ? "close" : "menu" }}</mat-icon>
@@ -21,5 +25,7 @@
     <li>Projetos</li>
     <li>Experiências</li>
     <li>Contato</li>
+    <li><a href="https://www.linkedin.com/in/matheussouzagonzalez/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/matheusgonzalez91" target="_blank">GitHub</a></li>
   </ul>
 </nav>
