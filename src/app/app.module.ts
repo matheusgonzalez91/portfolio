@@ -11,9 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, ProjectsComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, ProjectsComponent, ExperiencesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

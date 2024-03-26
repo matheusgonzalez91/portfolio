@@ -1,0 +1,47 @@
+<section class="experiencias">
+  <div class="label">
+    <h2>Experiências</h2>
+  </div>
+
+  <div class="list-experience">
+    <ul class="list">
+      <li
+        (click)="filtrarExperiencias('Smart Sales LTDA')"
+        [class.selected]="empresaSelecionada === 'Smart Sales LTDA'"
+      >
+        Smart Sales LTDA
+      </li>
+      <li
+        (click)="filtrarExperiencias('AW5 Tecnologia')"
+        [class.selected]="empresaSelecionada === 'AW5 Tecnologia'"
+      >
+        AW5 Tecnologia
+      </li>
+      <li
+        (click)="filtrarExperiencias('Phoenix Publicidade')"
+        [class.selected]="empresaSelecionada === 'Phoenix Publicidade'"
+      >
+        Phoenix Publicidade
+      </li>
+    </ul>
+  </div>
+
+  <div class="slide-container">
+    <div class="slide-content">
+      <ul class="result">
+        <li *ngFor="let experiencia of experienciasFiltradas">
+          <h2>{{ experiencia.cargo }} - {{ experiencia.periodo }}</h2>
+          <h3>{{ experiencia.descricao }}</h3>
+        </li>
+      </ul>
+    </div>
+    <div class="button-slide">
+      <button (click)="prevSlide()">
+        <img src="../../../assets/simbolo-de-setas-duplas-para-a-esquerda.png" alt="Previous">
+      </button>
+      <button (click)="nextSlide()">
+        <img src="../../../assets/simbolo-de-setas-duplas-para-a-direita-para-avancar.png" alt="Next">
+      </button>
+    </div>
+  </div>
+</section>
