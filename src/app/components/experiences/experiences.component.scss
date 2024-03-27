@@ -5,7 +5,7 @@ $main-color: #6200ff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 150px; /* Reduzindo a margem superior */
 }
 
 .label {
@@ -14,7 +14,7 @@ $main-color: #6200ff;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 50px; /* Reduzindo a margem superior */
 
   h2 {
     width: 150px;
@@ -34,7 +34,7 @@ $main-color: #6200ff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 10px; /* Reduzindo a margem superior */
 
   .list {
     display: flex;
@@ -44,8 +44,8 @@ $main-color: #6200ff;
 
     li {
       border: 2px solid transparent;
-      padding: 10px 20px;
-      margin: 0 5px;
+      padding: 10px 15px; /* Reduzindo o padding horizontal */
+      margin: 0 3px; /* Reduzindo a margem horizontal */
       border-radius: 10px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -67,12 +67,13 @@ $main-color: #6200ff;
 .slide-container {
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 10px; /* Reduzindo a margem superior */
 }
 
 .slide-content {
   display: flex;
   transition: transform 0.5s ease;
+  flex-wrap: nowrap; /* Evita que os slides quebrem para a próxima linha */
 }
 
 .result {
@@ -89,28 +90,57 @@ $main-color: #6200ff;
   align-items: center;
   text-align: center;
   width: 70%;
-  background-color: #f0f0f0;
+  background-color: $main-color;
   border-radius: 10px;
   padding: 20px;
   margin: 10px 0;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 15.5%; /* Ajustando a margem esquerda */
+  margin-right: 15.5%; /* Ajustando a margem direita */
+  color: white;
   box-shadow: 0 2px 4px $main-color;
 }
 
-.button-slide{
+.button-slide {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px; /* Reduzindo a margem superior */
 }
 
-.button-slide button{
+.button-slide button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 5px; /* Reduzindo a margem entre os botões */
 }
 
-button img{
+button img {
   width: 15px;
+}
+
+@media (max-width: 280px) {
+  .label h2 {
+    width: auto; /* Permitindo que o texto se ajuste dinamicamente */
+    padding: 5px; /* Ajustando o preenchimento interno */
+    font-size: 12px; /* Reduzindo o tamanho da fonte */
+  }
+
+  .list-experience .list li {
+    padding: 8px 12px; /* Ajustando o preenchimento interno */
+    margin: 0 2px; /* Reduzindo a margem horizontal */
+  }
+
+  .slide-content {
+    flex-wrap: wrap; /* Permitindo que os slides quebrem para a próxima linha */
+  }
+
+  .result li {
+    width: 90%; /* Reduzindo a largura para caber melhor na tela */
+    margin-left: 5%; /* Ajustando a margem esquerda */
+    margin-right: 5%; /* Ajustando a margem direita */
+    font-size: 12px; /* Reduzindo o tamanho da fonte */
+  }
+
+  .button-slide button {
+    margin: 0 3px; /* Reduzindo a margem entre os botões */
+  }
 }

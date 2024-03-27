@@ -1,0 +1,99 @@
+$main-color: #6200ff;
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px; /* Reduzindo a margem superior */
+}
+
+.label {
+  width: 100%;
+  padding: 0 1.5%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; /* Reduzindo a margem superior */
+
+  h2 {
+    width: 150px;
+    border-radius: 5px;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.info-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.icon-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-contact img{
+  width: 5%;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+
+  input[type='text']{
+    width: 40%;
+    height: 40px;
+    padding: 0 0.9%;
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    border: none;
+  }
+
+  textarea{
+    width: 40%;
+    height: 150px;
+    resize: none;
+    border: 0;
+    padding: 10px 0.9%;
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  button{
+    width: 200px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: $main-color;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s all;
+  }
+
+  button:hover{
+    background-color: darken($color: $main-color, $amount: 20);
+  }
+}
