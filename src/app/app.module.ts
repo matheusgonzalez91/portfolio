@@ -13,15 +13,28 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, ProjectsComponent, ExperiencesComponent, ContactComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ExperiencesComponent,
+    ContactComponent,
+    FooterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterLink,
+    RouterLinkActive,
   ],
   providers: [],
   bootstrap: [AppComponent],
