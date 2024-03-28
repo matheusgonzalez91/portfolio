@@ -48,7 +48,7 @@ $main-color: #6200ff;
 }
 
 .icon-contact img{
-  width: 5%;
+  width: 7%;
 }
 
 form{
@@ -95,5 +95,17 @@ form{
 
   button:hover{
     background-color: darken($color: $main-color, $amount: 20);
+  }
+}
+
+
+@media screen and (max-width: 890px) {
+  .info-contact{
+    width: 100%;
+    padding: 0 4%;
+  }
+
+  .info-contact img{
+    width: 100%;
   }
 }
