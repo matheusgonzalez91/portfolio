@@ -19,7 +19,7 @@ export class ExperiencesComponent implements OnInit {
       cargo: 'Desenvolvedor Júnior',
       descricao:
         'Participação ativa na concepção de projetos, realização de testes contínuos e otimização de novas funcionalidades, auxílio no desenvolvimento de novas tecnologias internas da empresa para aprimorar processos e produtos, colaboração em equipes multidisciplinares para resolver desafios técnicos e implementar soluções inovadoras, integração de sistemas utilizando JavaScript e PHP para garantir a interoperabilidade entre diferentes plataformas e serviços.',
-      periodo: '[05/2023] - [Até o momento]',
+      periodo: '[05/2023] - [02/2024]',
     },
     {
       empresa: 'AW5 Tecnologia',
